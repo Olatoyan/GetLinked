@@ -194,6 +194,31 @@
   height: 1.8rem;
 }
 
+.star-33 {
+  top: 8%;
+  left: 15%;
+}
+.star-34 {
+  bottom: 25%;
+  left: 45%;
+}
+.star-35 {
+  bottom: 10%;
+  left: 12%;
+}
+
+.star-36 {
+  bottom: 5%;
+  right: 11%;
+  width: 1rem;
+  height: 1.2rem;
+}
+
+.star-37 {
+  top: 8%;
+  right: 15%;
+}
+
 .heading__span {
   color: #d434fe;
   display: block;

@@ -13,10 +13,15 @@
   /* display: none !important; */
 }
 
-.form-flare-2 {
+.form-flare-1 {
+  top: -25%;
+  left: 0%;
+  rotate: 180deg;
 }
 
-.form-flare-1 {
+.form-flare-2 {
+  bottom: -30%;
+  right: 0%;
 }
 
 .register__img__box {
