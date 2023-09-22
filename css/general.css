@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&family=Voces&display=swap");
+@import url("https://fonts.cdnfonts.com/css/typo-hoop-demo");
+@import url("https://fonts.cdnfonts.com/css/volkhov");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Clash Display", sans-serif;
+  background-color: #150e28;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 5rem 0 0;
+}
+
+.header {
+  /* position: relative; */
+}
+
+.purple__flare {
+  top: -30%;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.header__logo__link:link,
+.header__logo__link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__logo {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.header__logo span {
+  color: #d434fe;
+}
+
+.main__nav {
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 5.6rem;
+  list-style: none;
+}
+.nav__link:link,
+.nav__link:visited {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.nav__link:link::after,
+.nav__link:visited::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  width: 0;
+  height: 0.2rem;
+  background-color: #903aff;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+.nav__link:hover::after {
+  width: 100%;
+}
+/* .nav__links:hover .nav__link {
+  color: #68707da8;
+} */
+
+.nav__links:hover .nav__link:hover {
+  color: #ebebeb;
+}
+
+.nav__link:hover {
+}
+.nav__link__cta {
+  margin-left: 6.5rem;
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+  border-radius: 0.4rem;
+  padding: 1.7rem 5.2rem;
+}
+
+.nav__link__cta:link::after {
+  /* content: ""; */
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  width: 0;
+  height: 0.2rem;
+  background-color: #903aff;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}

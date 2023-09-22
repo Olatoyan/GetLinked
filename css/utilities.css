@@ -1,0 +1,256 @@
+.star {
+  position: absolute;
+}
+.flare {
+  position: absolute;
+  z-index: -1;
+  mix-blend-mode: hard-light;
+}
+
+.star-1 {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+}
+
+.star-2 {
+  position: absolute;
+  top: 17%;
+  left: 13%;
+}
+
+.star-3 {
+  position: absolute;
+  bottom: 25%;
+  right: 37%;
+}
+
+.star-4 {
+  position: absolute;
+  top: 5%;
+  right: 8%;
+}
+
+.star-5 {
+  position: absolute;
+  height: 2.5rem;
+  width: 2.1rem;
+  top: 40%;
+  left: -20%;
+}
+
+.star-6 {
+  position: absolute;
+  top: -5%;
+  left: 40%;
+}
+
+.star-7 {
+  position: absolute;
+  bottom: -1%;
+  right: 20%;
+}
+
+.star-8 {
+  position: absolute;
+  top: -10%;
+  left: 20%;
+}
+.star-9 {
+  position: absolute;
+  bottom: 0%;
+  right: 10%;
+}
+
+.star-10 {
+  position: absolute;
+  bottom: 40%;
+  right: 40%;
+}
+
+.star-11 {
+  position: absolute;
+  top: -6%;
+  left: -7%;
+}
+
+.star-12 {
+  position: absolute;
+  top: 3%;
+  right: 50%;
+}
+.star-13 {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.star-14 {
+  position: absolute;
+  bottom: 43%;
+  left: 7%;
+}
+.star-15 {
+  position: absolute;
+  bottom: 0%;
+  right: 25%;
+}
+
+.star-16 {
+  position: absolute;
+  top: -20%;
+  left: 30%;
+}
+
+.star-17 {
+  position: absolute;
+  bottom: -20%;
+  left: 30%;
+}
+
+.star-18,
+.star-19,
+.star-20,
+.star-21 {
+  position: absolute;
+}
+
+.star-18 {
+  top: 12%;
+  left: 60%;
+  z-index: -1;
+}
+
+.star-19 {
+  top: 25%;
+  left: 0;
+}
+
+.star-20 {
+  top: 40%;
+  right: 0;
+}
+
+.star-21 {
+  bottom: -6%;
+  right: 35%;
+}
+
+.star-22 {
+  top: -8%;
+  left: 5%;
+}
+
+.star-23 {
+  top: -200%;
+}
+.star-24 {
+  bottom: 10%;
+  right: 45%;
+}
+
+.star-25 {
+  top: 20%;
+  right: 30%;
+}
+.star-26 {
+  bottom: 10%;
+  left: 20%;
+  width: 1.5rem;
+  height: 1.8rem;
+}
+.star-27 {
+  bottom: 20%;
+  left: 30%;
+  width: 1.5rem;
+  height: 1.8rem;
+}
+.star-28 {
+  bottom: 0;
+  right: 10%;
+}
+
+.star-29 {
+  top: 25%;
+  left: 2%;
+  width: 1.5rem;
+  height: 1.8rem;
+}
+.star-30 {
+  bottom: 30%;
+  left: 40%;
+  width: 1.5rem;
+  height: 1.8rem;
+}
+.star-31 {
+  top: 22%;
+  right: 30%;
+  width: 1.5rem;
+  height: 1.8rem;
+}
+.star-32 {
+  bottom: 40%;
+  right: 4%;
+  width: 1.5rem;
+  height: 1.8rem;
+}
+
+.heading__span {
+  color: #d434fe;
+  display: block;
+}
+
+.secondary__heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: "Clash Display", sans-serif;
+}
+
+.footer__heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.footer__heading span {
+  color: #d434fe;
+}
+
+.grid__2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cta:link,
+.cta:visited {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+  border-radius: 0.4rem;
+  padding: 1.7rem 5.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .partners__logo__box-1::before,
+.partners__logo__box-2::before,
+.partners__logo__box-3::before,
+.partners__logo__box-4::before,
+.partners__logo__box-5::before,
+.partners__logo__box-6::before {
+  position: absolute;
+  content: "";
+  width: 0.4rem;
+  background: #d434fe;
+  height: 100%;
+} */
