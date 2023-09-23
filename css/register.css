@@ -5,7 +5,7 @@
 .container {
   position: relative;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .register__container {
@@ -29,6 +29,7 @@
   position: relative;
 }
 .register__img {
+  width: 100%;
 }
 .form {
   font-family: "Montserrat", sans-serif;
@@ -91,6 +92,7 @@
   padding: 1.5rem 2.7rem;
   color: #fff;
   font-size: 1.4rem;
+  width: 100%;
 }
 
 .category option,
@@ -123,7 +125,7 @@
   text-align: center;
   border: 0;
   outline: 0;
-  overflow: hidden;
+  /* overflow-x: hidden; */
 }
 
 .success__container {

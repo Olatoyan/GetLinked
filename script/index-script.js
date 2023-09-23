@@ -48,3 +48,42 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+//////////////////////////////////////////
+const allSections = document.querySelectorAll("section");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.2,
+});
+allSections.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
+
+const textElement = document.querySelector(".typewriter-text");
+const spanElement = document.querySelector(".span");
+
+const originalText = textElement.textContent;
+let currentIndex = 0;
+function typeText() {
+  textElement.textContent = originalText.substring(0, currentIndex);
+  textElement.style.opacity = "1";
+  currentIndex++;
+  if (currentIndex > originalText.length) {
+    currentIndex = originalText.length;
+    spanElement.style.opacity = "1";
+    setTimeout(function () {
+      spanElement.style.opacity = "0";
+      currentIndex = 0;
+    }, 2000);
+  }
+}
+
+setInterval(typeText, 100);

@@ -1,0 +1,146 @@
+@media (max-width: 75em) {
+  .primary__heading {
+    font-size: 5.5rem;
+  }
+
+  .nav__links {
+    gap: 3rem;
+  }
+
+  .cta:link,
+  .cta:visited,
+  .submit__cta,
+  .form__cta {
+    padding: 1.4rem 3.5rem;
+  }
+
+  .nav__link__cta {
+    margin-left: 0;
+  }
+
+  .star-1 {
+    top: -16%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .grid__2x2 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main__nav {
+    background-color: #150e28;
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 4;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main__nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .close-nav {
+    display: block;
+  }
+
+  .nav-open .open-nav {
+    display: none;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 13rem 7rem;
+  }
+
+  .nav__link {
+    font-family: "Inter", sans-serif !important;
+    font-size: 2rem !important;
+  }
+
+  .star {
+    width: 1.3rem;
+    height: 1.5rem;
+  }
+
+  .star-1 {
+    top: 0%;
+  }
+
+  .star-3 {
+    width: 1.3rem;
+    height: 1.5rem;
+    bottom: 35%;
+    right: 27%;
+  }
+
+  .star-5 {
+    top: 26%;
+    left: 22%;
+  }
+
+  .star-4 {
+    width: 1.2rem;
+    height: 1.4rem;
+    top: 4%;
+    right: -6%;
+  }
+
+  .star-6 {
+    top: 9%;
+    left: 100%;
+    width: 1.5rem;
+    height: 1.7rem;
+  }
+
+  .star-7 {
+    bottom: -9%;
+    right: 80%;
+    width: 1.2rem;
+    height: 1.4rem;
+  }
+
+  .arrow-1 {
+    bottom: -20%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 3.9456rem;
+    height: 4.2818rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .header__box {
+    padding: 0 3rem 3rem;
+  }
+
+  .container {
+    padding: 2rem 0 0;
+  }
+}

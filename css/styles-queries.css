@@ -1,0 +1,441 @@
+@media (max-width: 87.5em) {
+  .primary__heading {
+    font-size: 6.5rem;
+  }
+
+  .primary__heading img {
+    height: 4.6rem;
+    width: 4.6rem;
+  }
+
+  .hero__text__img {
+    right: 28%;
+    width: 4rem;
+    height: 6rem;
+  }
+
+  .hero__img__text {
+    font-size: 2.6rem;
+  }
+
+  /* .hero__img__text span {
+    right: 21%;
+  } */
+}
+
+@media (max-width: 75em) {
+  .primary__heading {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 68.75em) {
+  /* .hero__img__text {
+    font-size: 2.2rem;
+  }
+  .hero__img__text span {
+    bottom: -75%;
+    right: 10%;
+  } */
+
+  .partners__logo__boxes {
+    padding: 9rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero__section {
+    gap: 4rem;
+  }
+
+  .full-width {
+    width: 50%;
+  }
+
+  .hero__text__box {
+    align-items: center;
+    text-align: center;
+    padding-top: 6rem;
+  }
+
+  .primary__heading {
+    max-width: 50.1rem;
+  }
+
+  /* .hero__img__text {
+    position: absolute;
+    top: -135%;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+  .hero__text__img {
+    right: 16%;
+    top: 4%;
+  }
+
+  .hero__img__box {
+    align-items: center;
+  }
+
+  .introduction__section {
+    gap: 4rem;
+  }
+
+  .intro__img__box {
+    display: flex;
+    justify-content: center;
+  }
+  .intro__text__box {
+    text-align: center;
+  }
+
+  .rules__img__box,
+  .judging__img__box,
+  .prizes__img__box {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .faq__img__box {
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
+  }
+
+  .questions {
+    top: 6%;
+  }
+  .rules__text__box,
+  .judging__text__box,
+  .faq__text__box,
+  .prizes__text__box,
+  .privacy__text__box {
+    text-align: center;
+  }
+
+  .faq__text__box {
+    width: 100%;
+  }
+
+  .judging__cta:link,
+  .judging__cta:visited {
+    align-self: center;
+  }
+
+  .timeline__boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    gap: 2rem;
+    padding-left: 4rem;
+  }
+
+  .timeline__box-l,
+  .timeline__text__heading-r {
+    text-align: left;
+  }
+
+  .privacy__img__box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .privacy__img__1,
+  .privacy__img__2 {
+    object-fit: contain;
+  }
+
+  .privacy__img__2 {
+    left: 28%;
+  }
+
+  .timeline__number {
+    position: absolute;
+    left: -5%;
+    bottom: 0;
+  }
+
+  .timeline__box-r,
+  .timeline__box-l {
+    order: -1;
+    gap: 0.5rem;
+  }
+
+  .faq__text {
+    align-self: center;
+  }
+
+  .prize__winner__img {
+    width: 12.5997rem;
+    height: 12.6421rem;
+    top: -20%;
+  }
+
+  .prize__winner__img-2 {
+    width: 25.5671rem;
+
+    height: 25.5671rem;
+    top: -50%;
+  }
+
+  .partners__logo__text,
+  .partners__logo__text__2,
+  .partners__logo__span__2 {
+    font-size: 3rem;
+  }
+
+  .privacy__heading__additional__text {
+    max-width: initial;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer__heading__text {
+    margin-top: 1.2rem;
+  }
+  .footer__privacy__text {
+    margin-top: 4rem;
+  }
+
+  .footer__links {
+    justify-self: flex-start;
+  }
+
+  .rules__section {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* .hero__img__text {
+    top: -120%;
+  } */
+
+  .hero__img__text .span {
+    bottom: -100%;
+  }
+}
+
+@media (max-width: 52.25em) {
+  /* .hero__img__text {
+    top: -126%;
+  } */
+
+  .partners__logo__img {
+    width: 50%;
+  }
+
+  .partners__logo__text__2,
+  .partners__logo__text {
+    font-size: 1.4rem;
+  }
+  .partners__logo__text__2 span {
+    font-size: 0.9rem;
+  }
+
+  .privacy__img__1 {
+    margin-left: 0;
+  }
+
+  .privacy__img__2 {
+    top: 0;
+    left: 25%;
+  }
+
+  .privacy__section {
+    padding: 8rem 7rem 10rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .partners__logo__boxes {
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .hero__img__box {
+    margin-left: 0;
+    padding-right: 2rem;
+  }
+
+  .hero__img__1,
+  .hero__img__2 {
+    width: 100%;
+  }
+
+  .purple__flare-4 {
+    top: -45%;
+    right: -15%;
+  }
+
+  .purple__flare-3 {
+    top: -200%;
+  }
+
+  .rules__img {
+    width: 100%;
+  }
+
+  .judging__img {
+    width: 100%;
+  }
+
+  .purple__flare-5 {
+    top: -20%;
+  }
+
+  .faq__text {
+    max-width: initial;
+  }
+
+  .timeline__section {
+    gap: 7rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .faqs {
+    text-align: start;
+  }
+
+  .prize__winner__boxes {
+    padding-top: 15rem;
+  }
+  .hero__section {
+    padding: 3rem 3rem 0;
+  }
+
+  .introduction__section {
+    padding: 6.3rem 3rem;
+  }
+
+  .rules__section {
+    padding: 2rem 3rem 0;
+  }
+
+  .judging__section {
+    padding: 10rem 3rem;
+  }
+
+  .faq__section {
+    padding: 6rem 3rem;
+  }
+
+  .timeline__section {
+    padding: 8rem 4rem;
+  }
+
+  .prizes__section {
+    padding: 8rem 3rem 0;
+  }
+
+  .partners__section {
+    padding: 8rem 3rem;
+  }
+  .partners__heading__box {
+    padding: 11rem 0 0;
+  }
+
+  .privacy__section {
+    padding: 8rem 3rem 3rem;
+  }
+
+  .footer {
+    padding: 8.5rem 3rem 5.4rem;
+  }
+
+  .privacy__box {
+    padding: 6rem 3rem;
+  }
+
+  .prize__winner__img {
+    width: 10.5997rem;
+    height: 10.6421rem;
+  }
+
+  .prize__winner__img-2 {
+    width: 20.5671rem;
+
+    height: 20.5671rem;
+  }
+
+  .prize__winner__position,
+  .prize__winner__title {
+    font-size: 1.5rem;
+  }
+
+  .prize__winner__position {
+    padding-top: 7rem;
+  }
+
+  .prize__winner__money,
+  .prize__winner__money-2 {
+    font-size: 1.8rem;
+  }
+
+  .primary__heading {
+    font-size: 3.5rem !important;
+  }
+
+  .hero__text {
+    font-size: 1.5rem;
+  }
+
+  .hero__img__text {
+    font-size: 1.6rem;
+  }
+  .partners__logo__span__2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .prize__winner__img {
+    width: 8.5997rem;
+    height: 8.6421rem;
+    top: -20%;
+  }
+
+  .prize__winner__img-2 {
+    width: 18.5671rem;
+
+    height: 18.5671rem;
+    top: -50%;
+  }
+
+  .hero__img__text .span img {
+    width: 11.5rem;
+  }
+
+  .prize__winner__boxes {
+    gap: 1.4rem;
+  }
+}
+
+/* @media (max-width: 26.875em) {
+  .prize__winner__img {
+    width: 7.5997rem;
+    height: 7.6421rem;
+  }
+
+  .prize__winner__img-2 {
+    width: 17.5671rem;
+
+    height: 17.5671rem;
+  }
+} */

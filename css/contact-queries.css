@@ -1,0 +1,40 @@
+@media (max-width: 68.75em) {
+  .contact__section {
+    padding: 10rem 7rem 10rem;
+    justify-items: stretch;
+  }
+
+  .contact__heading,
+  .contact__info,
+  .contact__address,
+  .contact__tel,
+  .contact__tel__link,
+  .contact__open__hour {
+    display: none;
+  }
+
+  .form__text__box {
+    display: flex;
+  }
+
+  .contact__social__box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+  }
+
+  .form {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .contact__section {
+    padding: 4rem;
+  }
+}
