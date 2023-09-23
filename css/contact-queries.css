@@ -17,6 +17,10 @@
     display: flex;
   }
 
+  .form__text {
+    display: block;
+  }
+
   .contact__social__box {
     position: absolute;
     bottom: 0;

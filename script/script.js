@@ -6,3 +6,5 @@ const headerEl = document.querySelector(".header__box");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+
+

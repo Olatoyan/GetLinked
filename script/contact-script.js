@@ -6,15 +6,21 @@ const messageEl = document.querySelector(".message");
 const submitBtn = document.querySelector(".form__cta");
 const formBox = document.querySelector(".form");
 const errorText = document.querySelector(".error__text");
+const allLinks = document.querySelectorAll(".nav__link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    if (link.classList.contains("nav__link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
 
 formBox.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  if (
-    !nameEl.value.trim() ||
-    !emailEl.value.trim() ||
-    !messageEl.value.trim()
-  ) {
+  const fieldsFilled =
+    nameEl.value.trim() && emailEl.value.trim() && messageEl.value.trim();
+
+  if (!fieldsFilled) {
     errorText.style.opacity = "1";
     errorText.style.visibility = "visible";
   } else {
@@ -31,16 +37,20 @@ formBox.addEventListener("submit", (e) => {
 });
 
 const contactUS = async function (formData) {
-  const res = await fetch(
-    "https://backend.getlinked.ai/hackathon/contact-form",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    }
-  );
+  try {
+    const res = await fetch(
+      "https://backend.getlinked.ai/hackathon/contact-form",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
 
-  const data = await res.json();
+    const data = await res.json();
+  } catch (error) {
+    console.log(error);
+  }
 };

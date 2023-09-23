@@ -11,6 +11,13 @@ const errorText = document.querySelector(".confirm__text");
 const checkbox = document.querySelector(".checkbox");
 const successContainer = document.querySelector(".success__container");
 const overlay = document.querySelector(".overlay");
+const allLinks = document.querySelectorAll(".nav__link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    if (link.classList.contains("nav__link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
 
 const categoryMarkup = function (data) {
   const options = data
@@ -30,46 +37,50 @@ const categoryMarkup = function (data) {
         </select>
   `;
 
-  categoryBox.insertAdjacentHTML("beforeend", html);
-  const categoryEl = document.querySelector(".category");
+  categoryBox.innerHTML += html;
 
-  formBox.addEventListener("submit", function (e) {
+  formBox.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    if (
-      !teamEL.value.trim() ||
-      !phoneEl.value.trim() ||
-      !mailEL.value.trim() ||
-      !projectTopicEl.value.trim()
-    ) {
+    const categoryEl = document.querySelector(".category");
+    const teamName = teamEL.value.trim();
+    const phoneNumber = phoneEl.value.trim();
+    const email = mailEL.value.trim();
+    const projectTopic = projectTopicEl.value.trim();
+
+    if (!teamName || !phoneNumber || !email || !projectTopic) {
       showError();
-    } else if (phoneEl.value.length !== 11) {
+    } else if (phoneNumber.length !== 11) {
       showError();
     } else if (!checkbox.checked) {
       showError();
     } else {
       hideError();
       const formData = {
-        team_name: teamEL.value.trim(),
-        phone_number: phoneEl.value.trim(),
-        email: mailEL.value.trim(),
-        project_topic: projectTopicEl.value.trim(),
+        team_name: teamName,
+        phone_number: phoneNumber,
+        email: email,
+        project_topic: projectTopic,
         group_size: groupSizeEl.value,
         category: categoryEl.value,
         privacy_poclicy_accepted: checkbox.value,
       };
       sendRegistration(formData);
-      showSuccess();
+      location.reload();
     }
   });
 };
 
 const getCategories = async function () {
-  const res = await fetch(
-    "https://backend.getlinked.ai/hackathon/categories-list"
-  );
-  const data = await res.json();
-  categoryMarkup(data);
+  try {
+    const res = await fetch(
+      "https://backend.getlinked.ai/hackathon/categories-list"
+    );
+    const data = await res.json();
+    categoryMarkup(data);
+  } catch (error) {
+    console.log(error);
+  }
 };
 getCategories();
 
@@ -82,18 +93,22 @@ phoneEl.addEventListener("input", () => {
 });
 
 const sendRegistration = async function (formData) {
-  const res = await fetch(
-    "https://backend.getlinked.ai/hackathon/registration",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    }
-  );
-
-  const data = await res.json();
+  try {
+    const res = await fetch(
+      "https://backend.getlinked.ai/hackathon/registration",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
+    const data = await res.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 function showError() {
