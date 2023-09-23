@@ -32,3 +32,18 @@
     font-size: 50%;
   }
 }
+
+@media (max-width: 31.25em) {
+  .success__container {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .success__img {
+    width: 100%;
+  }
+
+  .success__heading {
+    font-size: 2rem;
+  }
+}

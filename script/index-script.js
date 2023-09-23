@@ -2,6 +2,7 @@
 
 const allLinks = document.querySelectorAll(".nav__link__i");
 const sectionHeroEl = document.querySelector(".hero__section");
+const allSections = document.querySelectorAll("section");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -48,9 +49,6 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
-
-//////////////////////////////////////////
-const allSections = document.querySelectorAll("section");
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;

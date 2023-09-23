@@ -11,6 +11,7 @@ const errorText = document.querySelector(".confirm__text");
 const checkbox = document.querySelector(".checkbox");
 const successContainer = document.querySelector(".success__container");
 const overlay = document.querySelector(".overlay");
+
 const categoryMarkup = function (data) {
   const options = data
     .map(
@@ -41,17 +42,13 @@ const categoryMarkup = function (data) {
       !mailEL.value.trim() ||
       !projectTopicEl.value.trim()
     ) {
-      errorText.style.opacity = "1";
-      errorText.style.visibility = "visible";
+      showError();
     } else if (phoneEl.value.length !== 11) {
-      errorText.style.opacity = "1";
-      errorText.style.visibility = "visible";
+      showError();
     } else if (!checkbox.checked) {
-      errorText.style.opacity = "1";
-      errorText.style.visibility = "visible";
+      showError();
     } else {
-      errorText.style.opacity = "0";
-      errorText.style.visibility = "hidden";
+      hideError();
       const formData = {
         team_name: teamEL.value.trim(),
         phone_number: phoneEl.value.trim(),
@@ -62,8 +59,7 @@ const categoryMarkup = function (data) {
         privacy_poclicy_accepted: checkbox.value,
       };
       sendRegistration(formData);
-      successContainer.classList.remove("hidden");
-      overlay.classList.remove("hidden");
+      showSuccess();
     }
   });
 };
@@ -99,3 +95,18 @@ const sendRegistration = async function (formData) {
 
   const data = await res.json();
 };
+
+function showError() {
+  errorText.style.opacity = "1";
+  errorText.style.visibility = "visible";
+}
+
+function hideError() {
+  errorText.style.opacity = "0";
+  errorText.style.visibility = "hidden";
+}
+
+function showSuccess() {
+  successContainer.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
