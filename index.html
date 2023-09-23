@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/general-queries.css" />
+    <script src="script/index-script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -23,9 +25,13 @@
           </a>
           <nav class="main__nav">
             <ul class="nav__links">
-              <li><a href="#" class="nav__link">Timeline</a></li>
-              <li><a href="#" class="nav__link">Overview</a></li>
-              <li><a href="#" class="nav__link">FAQs</a></li>
+              <li>
+                <a href="#timeline" class="nav__link nav__link__i">Timeline</a>
+              </li>
+              <li>
+                <a href="#overview" class="nav__link nav__link__i">Overview</a>
+              </li>
+              <li><a href="#faq" class="nav__link nav__link__i">FAQs</a></li>
               <li><a href="contact.html" class="nav__link">Contact</a></li>
               <li>
                 <a href="register.html" class="nav__link nav__link__cta"
@@ -41,7 +47,7 @@
           />
         </div>
 
-        <section class="hero__section">
+        <section class="hero__section grid__2x2" id="overview">
           <div class="hero__text__box">
             <h1 class="primary__heading">
               getlinked Tech Hackathon <span>1.0</span>
@@ -52,7 +58,7 @@
               <img
                 src="assets/images/boom.png"
                 alt="boom"
-                class="hero__boom__img"
+                class="hero__boom__img full-width"
               />
             </h1>
             <p class="hero__text">
@@ -73,12 +79,12 @@
             <img
               src="assets/images/white-star.png"
               alt="star 1"
-              class="star-1"
+              class="star star-1"
             />
             <img
               src="assets/images/dark-star.png"
               alt="star 3"
-              class="star-3"
+              class="star star-3"
             />
           </div>
           <div class="hero__img__box">
@@ -89,14 +95,14 @@
               /></span>
             </p>
             <img
-              class="hero__img__1"
+              class="hero__img__1 full-width"
               src="assets/images/man-wearing-smart-glasses-touching-virtual-screen-1.png"
               alt="man-wearing-smart-glasses-touching-virtual-screen-1"
             />
             <img
               src="assets/images/science.png"
               alt="science"
-              class="hero__img__2"
+              class="hero__img__2 full-width"
             />
             <img
               src="assets/images/purple-lens-flare-png-2.png"
@@ -106,21 +112,25 @@
             <img
               src="assets/images/dark-star.png"
               alt="star 2"
-              class="star-2"
+              class="star star-2"
             />
           </div>
         </section>
       </header>
 
       <main class="main">
-        <section class="introduction__section">
+        <section class="introduction__section grid__2x2">
           <div class="intro__img__box">
             <img
               src="assets/images/the-big-idea-1.png"
               alt="the-big-idea-1"
-              class="intro__img"
+              class="intro__img full-width"
             />
-            <img src="assets/images/star-pu.png" alt="star 5" class="star-5" />
+            <img
+              src="assets/images/star-pu.png"
+              alt="star 5"
+              class="star star-5"
+            />
             <img
               src="assets/images/curved-arrow.png"
               alt="curved arrow"
@@ -141,10 +151,14 @@
               creating solutions that can change the world, that's what we're
               all about!
             </p>
-            <img src="assets/images/star-pu.png" alt="star 4" class="star-4" />
+            <img
+              src="assets/images/star-pu.png"
+              alt="star 4"
+              class="star-4 star"
+            />
           </div>
         </section>
-        <section class="rules__section">
+        <section class="rules__section grid__2x2">
           <div class="rules__text__box">
             <h2 class="secondary__heading">
               Rules and <span class="heading__span"> Guidelines</span>
@@ -161,12 +175,12 @@
             <img
               src="assets/images/dark-star.png"
               alt="star 6"
-              class="star-6"
+              class="star star-6"
             />
             <img
               src="assets/images/white-star.png"
               alt="star 7"
-              class="star-7"
+              class="star star-7"
             />
             <img
               src="assets/images/purple-lens-flare-png.png"
@@ -178,7 +192,7 @@
             <img
               src="assets/images/rules.png"
               alt="rules img"
-              class="rules__img"
+              class="rules__img full-width"
             />
             <img
               src="assets/images/purple-lens-flare-png.png"
@@ -187,28 +201,32 @@
             />
           </div>
         </section>
-        <section class="judging__section">
+        <section class="judging__section grid__2x2">
           <div class="judging__img__box">
             <img
               src="assets/images/judging.png"
               alt="judging img"
-              class="judging__img"
+              class="judging__img full-width"
             />
             <img
               src="assets/images/judging-purple-lens-flare-png.png"
               alt="purple__flare-5"
               class="purple__flare-5 flare"
             />
-            <img src="assets/images/star-pu.png" alt="star 8" class="star-8" />
+            <img
+              src="assets/images/star-pu.png"
+              alt="star 8"
+              class="star star-8"
+            />
             <img
               src="assets/images/white-star.png"
               alt="star 9"
-              class="star-9"
+              class="star star-9"
             />
             <img
               src="assets/images/dark-star.png"
               alt="star 10"
-              class="star-10"
+              class="star star-10"
             />
           </div>
           <div class="judging__text__box">
@@ -249,7 +267,7 @@
             <a href="#" class="judging__cta cta">Read More</a>
           </div>
         </section>
-        <section class="faq__section">
+        <section class="faq__section grid__2x2" id="faq">
           <div class="faq__text__box">
             <h2 class="secondary__heading">
               Frequently Ask <span class="heading__span">Question</span>
@@ -287,7 +305,7 @@
             <img
               src="assets/images/star-pu.png"
               alt="star 11"
-              class="star-11"
+              class="star star-11"
             />
           </div>
           <div class="faq__img__box">
@@ -308,7 +326,11 @@
                 class="question"
               />
             </div>
-            <img src="assets/images/faq.png" alt="faq img" class="faq__img" />
+            <img
+              src="assets/images/faq.png"
+              alt="faq img"
+              class="faq__img full-width"
+            />
             <img
               src="assets/images/faq-purple-lens-flare-png.png"
               alt="purple-flare-6"
@@ -317,26 +339,26 @@
             <img
               src="assets/images/star-pu.png"
               alt="star-12"
-              class="star-12"
+              class="star star-12"
             />
             <img
               src="assets/images/star-pu.png"
               alt="star-13"
-              class="star-13"
+              class="star star-13"
             />
             <img
               src="assets/images/dark-star.png"
               alt="star-14"
-              class="star-14"
+              class="star star-14"
             />
             <img
               src="assets/images/white-star.png"
               alt="star-15"
-              class="star-15"
+              class="star star-15"
             />
           </div>
         </section>
-        <section class="timeline__section">
+        <section class="timeline__section" id="timeline">
           <div class="timeline__heading__box">
             <h2 class="secondary__heading">Timeline</h2>
             <p class="timeline__heading__text">
@@ -427,22 +449,22 @@
             <div class="vertical__line"></div>
           </div>
         </section>
-        <section class="prizes__section">
+        <section class="prizes__section grid__2x2">
           <div class="prizes__img__box">
             <img
               src="assets/images/prizes.png"
               alt="prizes img"
-              class="prizes__img"
+              class="prizes__img full-width"
             />
             <img
               src="assets/images/star-pu.png"
               alt="star 16"
-              class="star-16"
+              class="star star-16"
             />
             <img
               src="assets/images/white-star.png"
               alt="star 17"
-              class="star-17"
+              class="star star-17"
             />
           </div>
           <div class="prizes__text__box">
@@ -490,22 +512,22 @@
             <img
               src="assets/images/star-pu.png"
               alt="star 18"
-              class="star-18"
+              class="star star-18"
             />
             <img
               src="assets/images/white-star.png"
               alt="star 19"
-              class="star-19"
+              class="star star-19"
             />
             <img
               src="assets/images/white-star.png"
               alt="star 20"
-              class="star-20"
+              class="star star-20"
             />
             <img
               src="assets/images/dark-star.png"
               alt="star 21"
-              class="star-21"
+              class="star star-21"
             />
           </div>
           <img
@@ -537,14 +559,14 @@
               <img
                 src="assets/images/liberty-company-logo-white-colour.png"
                 alt="liberty-company-logo-white-colour"
-                class="partners__logo__img"
+                class="partners__logo__img full-width"
               />
             </div>
             <div class="partners__logo__box partners__logo__box-2">
               <img
                 src="assets/images/liberty-company-logo-white.png"
                 alt="liberty-company-logo-white"
-                class="partners__logo__img"
+                class="partners__logo__img full-width"
               />
               <img
                 src="assets/images/star-pu.png"
@@ -556,14 +578,14 @@
               <img
                 src="assets/images/winwise-logo-white-colour-1.png"
                 alt="winwise-logo-white-colour-1"
-                class="partners__logo__img"
+                class="partners__logo__img full-width"
               />
             </div>
             <div class="partners__logo__box partners__logo__box-4">
               <img
                 src="assets/images/wisper-logo-white.png"
                 alt="wisper-logo-white"
-                class="partners__logo__img"
+                class="partners__logo__img full-width"
               />
             </div>
             <div class="partners__logo__box partners__logo__box-5">
@@ -598,7 +620,7 @@
             class="partners__flare-2 flare"
           />
         </section>
-        <section class="privacy__section">
+        <section class="privacy__section grid__2x2">
           <div class="privacy__text__box">
             <div class="privacy__heading__box">
               <h2 class="secondary__heading">
@@ -655,12 +677,12 @@
             <img
               src="assets/icons/privacy.svg"
               alt="privacy img"
-              class="privacy__img__1"
+              class="privacy__img__1 full-width"
             />
             <img
               src="assets/images/privacy.png"
               alt="privacy img"
-              class="privacy__img__2"
+              class="privacy__img__2 full-width"
             />
             <img
               src="assets/images/white-star.png"

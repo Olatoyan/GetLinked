@@ -1,8 +1,6 @@
 /********************** HERO SECTION********************** */
 
 .hero__section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 3rem 4rem 0 7rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
@@ -88,7 +86,6 @@
 }
 
 .hero__img__1 {
-  width: 100%;
 }
 .hero__img__2 {
   position: absolute;
@@ -108,8 +105,6 @@
 /********************** INTRODUCTION SECTION********************** */
 
 .introduction__section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   padding: 6.2rem 9rem;
@@ -121,8 +116,8 @@
 }
 
 .intro__img {
-  width: 49rem;
-  height: 47.7rem;
+  /* width: 49rem;
+  height: 47.7rem; */
 }
 
 .intro__text__box {
@@ -154,8 +149,6 @@
 /********************** RULES SECTION********************** */
 
 .rules__section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 2rem 7rem 0;
   overflow: hidden;
@@ -192,8 +185,8 @@
 }
 
 .rules__img {
-  width: 66.4rem;
-  height: 66.4rem;
+  /* width: 66.4rem;
+  height: 66.4rem; */
 }
 
 .purple__flare-4 {
@@ -203,8 +196,6 @@
 
 /********************** JUDGING SECTION********************** */
 .judging__section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 10rem 7rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
@@ -251,8 +242,6 @@
 
 /********************** FAQ SECTION********************** */
 .faq__section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 6rem 10rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
@@ -438,8 +427,6 @@
 
 /********************** PRIZES SECTION********************** */
 .prizes__section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 8rem 7rem;
   position: relative;
@@ -646,11 +633,10 @@
 
 /********************** PRIVACY SECTION********************** */
 .privacy__section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   padding: 8rem 7rem 23rem;
   font-family: "Montserrat", sans-serif;
   position: relative;
+  gap: 2rem;
 }
 
 .privacy__flare {

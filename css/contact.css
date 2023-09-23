@@ -1,3 +1,19 @@
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__flare-1 {
+  rotate: 180deg;
+  top: 0;
+  left: -3%;
+}
+
+.contact__flare-2 {
+  bottom: -26%;
+  right: -11%;
+}
+
 .header__box {
   border: 0;
 }
@@ -120,4 +136,17 @@
 .form__cta__box {
   display: flex;
   justify-content: center;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.error__text {
+  color: #ff26b9;
+  font-size: 2rem;
+  font-style: italic;
+  padding: 2.3rem 0 1.6rem;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
 }

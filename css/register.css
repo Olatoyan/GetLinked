@@ -5,6 +5,7 @@
 .container {
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .register__container {
@@ -92,6 +93,11 @@
   font-size: 1.4rem;
 }
 
+.category option,
+.group option {
+  color: #000;
+}
+
 .input::placeholder {
   color: rgba(255, 255, 255, 0.25);
 }
@@ -101,6 +107,8 @@
   font-size: 1.2rem;
   font-style: italic;
   padding: 2.3rem 0 1.6rem;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .checkbox__box label {
@@ -113,6 +121,9 @@
 
 .submit__box {
   text-align: center;
+  border: 0;
+  outline: 0;
+  overflow: hidden;
 }
 
 .success__container {
@@ -133,7 +144,9 @@
   border-radius: 0.5rem;
   border: 1px solid #d434fe;
   background-color: rgba(255, 255, 255, 0.01);
-  padding: 4rem;
+  padding: 4rem 4rem 7rem;
+
+  position: relative;
 }
 
 .success__heading {

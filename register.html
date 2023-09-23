@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/register.css" />
     <link rel="stylesheet" href="css/utilities.css" />
+    <script src="script/register-script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -113,8 +114,8 @@
                   placeholder="What is your group project topic"
                 />
               </div>
-              <div class="register__box">
-                <label for="category">Category</label>
+              <div class="register__box category__box">
+                <!-- <label for="category">Category</label>
                 <select id="category" class="category input">
                   <option value="Select your category">
                     Select your category
@@ -125,9 +126,9 @@
                   <option value="Select your category">
                     Select your category
                   </option>
-                </select>
+                </select> -->
               </div>
-              <div class="register__box">
+              <div class="register__box group__box">
                 <label for="group">Group Size</label>
                 <select id="group" class="group input">
                   <option value="10">10</option>
@@ -140,15 +141,15 @@
               Please review your registration details before submitting
             </p>
             <div class="checkbox__box">
-              <input type="checkbox" name="terms" id="terms" />
+              <input type="checkbox" name="terms" id="terms" class="checkbox" />
               <label for="terms"
                 >I agreed with the event terms and conditions and privacy
                 policy</label
               >
             </div>
-            <div class="submit__box">
-              <a href="#" class="cta">Register Now</a>
-            </div>
+            <button class="submit__box">
+              <p class="submit__cta">Register Now</p>
+            </button>
           </form>
           <img
             src="assets/images/faq-purple-lens-flare-png.png"
@@ -215,6 +216,22 @@
           <div class="success__cta__box">
             <a href="register.html" class="cta success__cta">Back</a>
           </div>
+
+          <img
+            src="assets/images/star-pu.png"
+            alt="star 42"
+            class="star-42 star"
+          />
+          <img
+            src="assets/images/dark-star.png"
+            alt="star 44"
+            class="star-44 star"
+          />
+          <img
+            src="assets/images/star-pu.png"
+            alt="star 43"
+            class="star-43 star"
+          />
         </div>
       </div>
       <div class="overlay hidden"></div>
