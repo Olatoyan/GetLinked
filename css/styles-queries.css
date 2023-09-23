@@ -425,17 +425,8 @@
   .prize__winner__boxes {
     gap: 1.4rem;
   }
+
+  .partners__logo__img {
+    width: 100%;
+  }
 }
-
-/* @media (max-width: 26.875em) {
-  .prize__winner__img {
-    width: 7.5997rem;
-    height: 7.6421rem;
-  }
-
-  .prize__winner__img-2 {
-    width: 17.5671rem;
-
-    height: 17.5671rem;
-  }
-} */
