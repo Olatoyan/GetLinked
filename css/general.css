@@ -21,6 +21,7 @@ body {
   background-color: #150e28;
   color: #fff;
   overflow-x: hidden;
+  position: relative;
 }
 
 .container {
