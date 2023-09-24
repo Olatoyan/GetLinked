@@ -445,4 +445,9 @@
   .partners__logo__text__box {
     padding: 1rem;
   }
+
+  .partners__logo__img {
+    width: 3rem;
+    height: 3rem;
+  }
 }
