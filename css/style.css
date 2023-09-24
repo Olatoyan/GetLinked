@@ -1,5 +1,10 @@
 /********************** HERO SECTION********************** */
 
+.header,
+.header__box {
+  overflow-x: hidden;
+}
+
 .hero__section {
   align-items: center;
   padding: 3rem 4rem 0 7rem;
