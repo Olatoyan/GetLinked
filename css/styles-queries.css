@@ -435,4 +435,14 @@
     top: 34%;
     left: 6%;
   }
+
+  .partners__section {
+    gap: 3rem;
+    padding: 6rem 3rem 4rem;
+  }
+
+  .partners__logo__box,
+  .partners__logo__text__box {
+    padding: 1rem;
+  }
 }
