@@ -29,7 +29,7 @@ body {
 
 .header {
   /* position: relative; */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .purple__flare {
