@@ -425,4 +425,14 @@
   .prize__winner__boxes {
     gap: 1.4rem;
   }
+
+  .privacy__img__1 {
+    width: 100%;
+  }
+
+  .privacy__img__2 {
+    width: 100%;
+    top: 34%;
+    left: 6%;
+  }
 }
